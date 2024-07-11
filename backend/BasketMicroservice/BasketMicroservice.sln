@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Basket.API\Basket.API.csproj", "{33658AB0-A0CC-4D28-A99A-2EEDF4C24AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.DB", "Basket.DB\Basket.DB.csproj", "{62C797C5-CF69-4E92-9620-87B1E295138C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33658AB0-A0CC-4D28-A99A-2EEDF4C24AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33658AB0-A0CC-4D28-A99A-2EEDF4C24AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33658AB0-A0CC-4D28-A99A-2EEDF4C24AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33658AB0-A0CC-4D28-A99A-2EEDF4C24AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C797C5-CF69-4E92-9620-87B1E295138C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C797C5-CF69-4E92-9620-87B1E295138C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C797C5-CF69-4E92-9620-87B1E295138C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C797C5-CF69-4E92-9620-87B1E295138C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEB36864-A599-4DE2-B12A-8C06C0A7CEE9}
+	EndGlobalSection
+EndGlobal

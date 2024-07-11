@@ -1,0 +1,32 @@
+{
+  "name": "VSCProjects",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "core-js": "^3.25.3",
+    "debounce": "^1.2.1",
+    "deepmerge": "^4.3.1",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-autosuggest": "^2.2.0",
+    "vue-server-renderer": "^2.7.10",
+    "vue-tel-input": "^5.14.2",
+    "vue-template-compiler": "^2.7.10",
+    "vuelidate": "^0.7.7",
+    "vuetify": "^2.6.10",
+    "vuetify-loader": "^1.9.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
+    "sass": "^1.77.5",
+    "sass-loader": "^10.5.2"
+  }
+}

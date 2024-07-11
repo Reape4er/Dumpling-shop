@@ -1,0 +1,7 @@
+$z-base: 10;
+$z-above: 1;
+$z-below: -1;
+
+$z-header: $z-base;
+$z-main: $z-header + $z-below;
+$z-modal: $z-header + $z-above;
