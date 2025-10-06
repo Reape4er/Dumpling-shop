@@ -1,77 +1,80 @@
-# Dumpling Shop
+# Магазин Пельменей
 
-A full-stack web application for a dumpling shop built with Vue.js frontend and C# backend.
+Микросервисное веб-приложение для магазина пельменей с фронтендом на Vue.js и бэкендом на C#.
 
-## Table of Contents
-- [Description](#description)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Launch](#launch)
+## Содержание
+- [Описание](#описание)
+- [Технологии](#технологии)
+- [Установка](#установка)
+- [Запуск](#запуск)
 
-## Description
-Dumpling Shop is a web application that provides an interface for managing and ordering dumplings. The project consists of a Vue.js frontend for the user interface and a C# backend for business logic and data management.
+## Описание
+Проект реализует многосервисную архитектуру для онлайн-магазина пельменей. Бэкенд состоит из независимых микросервисов:
+- **ProductMicroservice** — управление каталогом пельменей и их характеристиками.
+- **BasketMicroservice** — хранение и управление товарами в пользовательских корзинах с использованием Redis.
+- **OrderMicroservice** — хранение заказов.
+- **UserMicroservice** — регистрация, аутентификация и хранение данных пользователей.
 
-## Technologies
-- Frontend:
+Фронтенд построен на Nuxt.js (Vue.js) и включает страницы, компоненты, шаблоны, статические ресурсы, клиентские API для микросервисов, хранилище состояния и вспомогательные утилиты.
+
+## Технологии
+- Фронтенд:
   - Vue.js (42.5%)
   - SCSS (10.1%)
   - JavaScript (9.9%)
-- Backend:
+- Бэкенд:
   - C# (35.6%)
-- Deployment:
+- Деплоймент:
   - Docker (1.9%)
 
-## Installation
+## Установка
 
-### Prerequisites
-- Node.js (latest LTS version)
+### Необходимые компоненты
+- Node.js (последняя LTS-версия)
 - .NET SDK
-- Docker (optional, for containerized deployment)
+- Docker (опционально, для контейнерного деплоя)
 
-### Frontend Setup
-1. Navigate to the frontend directory:
+### Установка фронтенда
+1. Перейдите в директорию frontend:
 ```bash
 cd frontend
 ```
-
-2. Install dependencies:
+2. Установите зависимости:
 ```bash
 npm install
 ```
 
-### Backend Setup
-1. Navigate to the backend directory:
+### Установка бэкенда
+1. Перейдите в директорию backend:
 ```bash
 cd backend
 ```
-
-2. Restore .NET packages:
+2. В каждом микросервисе выполните:
 ```bash
 dotnet restore
 ```
 
-## Launch
+## Запуск
 
-### Development Mode
+### Режим разработки
 
-#### Frontend
-1. Start the Vue.js development server:
+#### Фронтенд
+1. Запустите сервер разработки Vue.js:
 ```bash
 npm run serve
 ```
-The frontend will be available at `http://localhost:8080`
+Фронтенд будет доступен по адресу `http://localhost:8080`
 
-#### Backend
-1. Start the C# backend:
+#### Бэкенд
+1. Запустите каждый микросервис отдельно:
 ```bash
 dotnet run
 ```
-The API will be available at `http://localhost:5000`
+API каждого сервиса будет доступен на соответствующем порту (например, `http://localhost:5000`).
 
-### Using Docker
-If you prefer to use Docker:
+### Использование Docker
+Если вы предпочитаете использовать Docker:
 ```bash
 docker-compose up --build
 ```
-
-This will start both the frontend and backend services in containers.
+Это запустит все микросервисы и фронтенд в контейнерах.
